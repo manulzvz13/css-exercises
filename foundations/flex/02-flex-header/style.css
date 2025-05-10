@@ -1,6 +1,7 @@
 .header  {
   font-family: monospace;
   background: papayawhip;
+  display: flex; 
 }
 
 .logo {
@@ -9,17 +10,47 @@
   color: tomato;
   background: white;
   padding: 4px 32px;
+  /* Logo is centered vertically and horizontally */
+  margin: auto; 
 }
 
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  /* this makes the ul lists flex-containers*/
+  display: flex;
+  height: 50px;
+}
+
+li {
+  /* list-items are horizontal, and are centered vertically inside the header */
+  margin: auto;
 }
 
 a {
   font-size: 22px;
   background: white;
-  padding: 8px;
+  padding: 5px;
+  margin: 5px;
   /* this removes the line under the links */
   text-decoration: none;
 }
+
+.left-links,
+.right-links {
+  /* Adds spaces between the items and the header */
+  margin: 15px
+}
+
+.left-links{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.right-links{
+  display: flex;
+  justify-content: flex-end ;
+}
+
