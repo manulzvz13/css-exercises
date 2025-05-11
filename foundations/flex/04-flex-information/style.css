@@ -1,5 +1,6 @@
 body {
   font-family: 'Courier New', Courier, monospace;
+  text-align: center;
 }
 
 img {
@@ -27,12 +28,6 @@ img {
 .saffron {
   width: 200px;
 }
-
-div.text {
-  display: flex;
-  justify-content: center;
-}
-
 
 /* do not edit this footer */
 .footer {
